@@ -1,0 +1,16 @@
+C:\Users\Tzuriel\Desktop\PhoneBook\PhoneBook\PhoneBook\bin\Release\PhoneBook.exe.config
+C:\Users\Tzuriel\Desktop\PhoneBook\PhoneBook\PhoneBook\bin\Release\PhoneBook.exe
+C:\Users\Tzuriel\Desktop\PhoneBook\PhoneBook\PhoneBook\bin\Release\PhoneBook.pdb
+C:\Users\Tzuriel\Desktop\PhoneBook\PhoneBook\PhoneBook\obj\Release\MainWindow.g.cs
+C:\Users\Tzuriel\Desktop\PhoneBook\PhoneBook\PhoneBook\obj\Release\App.g.cs
+C:\Users\Tzuriel\Desktop\PhoneBook\PhoneBook\PhoneBook\obj\Release\GeneratedInternalTypeHelper.g.cs
+C:\Users\Tzuriel\Desktop\PhoneBook\PhoneBook\PhoneBook\obj\Release\PhoneBook_MarkupCompile.cache
+C:\Users\Tzuriel\Desktop\PhoneBook\PhoneBook\PhoneBook\obj\Release\PhoneBook_MarkupCompile.lref
+C:\Users\Tzuriel\Desktop\PhoneBook\PhoneBook\PhoneBook\obj\Release\MainWindow.baml
+C:\Users\Tzuriel\Desktop\PhoneBook\PhoneBook\PhoneBook\obj\Release\PhoneBook.g.resources
+C:\Users\Tzuriel\Desktop\PhoneBook\PhoneBook\PhoneBook\obj\Release\PhoneBook.Properties.Resources.resources
+C:\Users\Tzuriel\Desktop\PhoneBook\PhoneBook\PhoneBook\obj\Release\PhoneBook.csproj.GenerateResource.cache
+C:\Users\Tzuriel\Desktop\PhoneBook\PhoneBook\PhoneBook\obj\Release\PhoneBook.csproj.CoreCompileInputs.cache
+C:\Users\Tzuriel\Desktop\PhoneBook\PhoneBook\PhoneBook\obj\Release\PhoneBook.exe
+C:\Users\Tzuriel\Desktop\PhoneBook\PhoneBook\PhoneBook\obj\Release\PhoneBook.pdb
+C:\Users\Tzuriel\Desktop\PhoneBook\PhoneBook\PhoneBook\obj\Release\PhoneBook.csprojAssemblyReference.cache

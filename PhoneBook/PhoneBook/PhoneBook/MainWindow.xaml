@@ -1,0 +1,62 @@
+﻿<Window x:Class="PhoneBook.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PhoneBook"
+        xmlns:vm="clr-namespace:PhoneBook.ViewModels"
+        mc:Ignorable="d"
+        Title="Phone Book" Height="450" Width="800">
+    <Window.DataContext>
+        <vm:MainViewModel/>
+    </Window.DataContext>
+    
+    <Grid>
+        
+        <Grid.RowDefinitions >
+            <RowDefinition Height="0.4*" />
+            <RowDefinition Height="0.8*" />
+            <RowDefinition Height="*"  />
+            <RowDefinition Height="0.8*" />
+            <RowDefinition Height="10*" />
+            <RowDefinition Height="0.35*" />
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions >
+            <ColumnDefinition Width="0.1*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="0.1*"/>
+        </Grid.ColumnDefinitions >
+
+        <Button x:Name="addBut"  Grid.Row="1" Grid.Column="1" Content="Add" Margin="0,0,1,2" Background="Beige" Command="{Binding AddCommand}"/>
+        <Button x:Name="delBut" Grid.Row="1" Grid.Column="2" Content="Delete" Margin="0,0,1,2" Background="Beige" Command="{Binding DelCommand}" IsEnabled="{Binding TextBoxEmpty }"/>
+        <Button x:Name="updBut" Grid.Row="1" Grid.Column="3" Content="Update" Margin="0,0,1,2"  Background="Beige" Command="{Binding UpdCommand}" IsEnabled="{Binding TextBoxEmpty }"/>
+        <Button x:Name="loadBut" Grid.Row="1" Grid.Column="4" Content="Load" Margin="0,0,1,2" Command="{Binding LoadCommand }"  Background="Beige" />
+        <Button x:Name="saveBut" Grid.Row="1" Grid.Column="5" Content="Save" Margin="0,0,1,2" Command="{Binding SaveCommand}" Background="Beige" IsEnabled="{Binding TextBoxEmpty }"/>
+        
+        <Label x:Name="firstNameLabel" Grid.Row="2" Grid.Column="1" Content="First Name:" Margin="-5,8,0,0"/>
+        <TextBox x:Name="firstTextBox" Grid.Row="3" Grid.Column="1" Margin="0,2,1,3" Text="{Binding PersonObj.firstName}"/>
+
+        <Label x:Name="lastNameLabel" Grid.Row="2" Grid.Column="2" Content="Last Name:" Margin="-5,8,0,0"/>
+        <TextBox x:Name="lastTextBox" Grid.Row="3" Grid.Column="2"  Margin="0,2,1,3" Text="{Binding PersonObj.lastName}"/>
+
+        <Label x:Name="phoneLabel" Grid.Row="2" Grid.Column="3" Content="Phone:" Margin="-5,8,0,0"/>
+        <TextBox x:Name="phoneTextBox" Grid.Row="3" Grid.Column="3"  Margin="0,2,1,3" Text="{Binding PersonObj.phone}"/>
+
+        <Label x:Name="emailLabel" Grid.Row="2" Grid.Column="4" Content="Email:" Margin="-5,8,0,0"/>
+        <TextBox x:Name="emailTextBox" Grid.Row="3" Grid.Column="4"   Margin="0,2,1,3" Text="{Binding PersonObj.email}"/>
+
+        <Label x:Name="passLabel" Grid.Row="2" Grid.Column="5" Content="Password:" Margin="-5,8,0,0"/>
+        <TextBox x:Name="passTextBox" Grid.Row="3" Grid.Column="5"  Margin="0,2,1,3" Text="{Binding PersonObj.password}"/>
+
+        <DataGrid ColumnWidth="150" FontSize="12"  Grid.Row="4" Grid.Column="1"  Grid.ColumnSpan="5" SelectionMode="Single" SelectionUnit="FullRow" SelectedIndex="{Binding SelectedTableRow}"  Background="White" ItemsSource="{Binding PersonData}" >
+            <DataGrid.Resources>
+                <SolidColorBrush x:Key="{x:Static SystemColors.InactiveSelectionHighlightBrushKey}" Color="Green"/>
+            </DataGrid.Resources>
+        </DataGrid>
+    </Grid>
+</Window>
